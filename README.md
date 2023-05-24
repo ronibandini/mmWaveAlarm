@@ -1,12 +1,16 @@
 # mmWaveAlarm
 Detect human presence behind doors and walls with Telegram Notification - DFRobot SEN0395 and ESP32C
 
+# Brief
+Sometimes you need to know what is going on outside your door. Of course you can install a PIR sensor or HCSR04 distance sensor with cables and all but, wouldn't be cool to use an indoor Milimiter Wave Radar sensor instead? This mm wave alarm is able to detect persons behind walls or doors and notify by Telegram.
+
 # Parts
 ESP32C3 https://www.dfrobot.com/product-2566.html?tracking=61357a929f73e  
 MM Wave Radar https://www.dfrobot.com/product-2282.html?tracking=61357a929f73e 
 
-# Brief
-Sometimes you need to know what is going on outside your door. Of course you can install a PIR sensor or HCSR04 distance sensor with cables and all but, wouldn't be cool to use an indoor Milimiter Wave Radar sensor instead?
+# 3d Enclosure
+
+https://cults3d.com/en/3d-model/gadget/mm-wave-radar-alarm
 
 # Circuit
 Connect the Wave radar to 3.3v, GND and TX to GPIO5 and RX to GPIO7
@@ -16,7 +20,6 @@ Connect the Wave radar to 3.3v, GND and TX to GPIO5 and RX to GPIO7
 #include <UniversalTelegramBot.h>
 
 # Settings
-
 #define BOT_TOKEN ":"
 #define WIFI_SSID ""
 #define WIFI_PASSWORD ""
